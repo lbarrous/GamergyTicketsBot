@@ -15,6 +15,9 @@ def bot():
     botID = os.getenv('BOT_ID')
     chatID = os.getenv('CHAT_ID')
 
+    pprint(botID)
+    pprint(chatID)
+
     bot = telepot.Bot(botID)
     ticketsAvailability = getTicketsAvailability()
 
