@@ -1,1 +1,1 @@
-app: python scheduler.py
+web: python3 scheduler.py
