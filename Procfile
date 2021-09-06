@@ -1,1 +1,1 @@
-app: python gamergybot
+app: python scheduler.py
