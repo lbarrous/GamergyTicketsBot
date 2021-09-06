@@ -1,11 +1,20 @@
+import os
 from pprint import pprint
 
 import telepot
+from dotenv import load_dotenv
 
 from ticketsAvailabilityScrapper import getTicketsAvailability
 
+load_dotenv()
 
-def bot(botID, chatID):
+
+def bot():
+
+    # bot and chat ids
+    botID = os.getenv('BOT_ID')
+    chatID = os.getenv('CHAT_ID')
+
     bot = telepot.Bot(botID)
     ticketsAvailability = getTicketsAvailability()
 
